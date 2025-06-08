@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://images8.alphacoders.com/117/1173519.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px 5px black;
+}
+
+p {
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px black;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #f12711;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#mensaje, #sorpresa, #respuesta, #galeria, #video, #juego {
+  display: none;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.spiderman {
+  margin: 10px;
+  max-width: 150px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.spiderman:hover {
+  transform: scale(1.1);
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#countdown {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.galeria img {
+  width: 120px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
+
+#intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-size: 2em;
+}
