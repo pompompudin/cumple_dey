@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('https://i.imgur.com/eS93zYY.jpg') repeat;
+  background: #0d0e30; 
   background-size: cover;
   font-family: 'Fredoka', sans-serif;
   color: #222;
