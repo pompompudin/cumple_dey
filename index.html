@@ -1,180 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¡Feliz Cumpleaños!</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('https://images8.alphacoders.com/117/1173519.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      transition: background-color 0.5s ease;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      text-shadow: 2px 2px 5px black;
-    }
-    p {
-      font-size: 1.5em;
-      margin: 10px 0;
-      text-shadow: 1px 1px 3px black;
-    }
-    button {
-      margin: 10px;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      background-color: #fff;
-      color: #f12711;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-    button:hover {
-      transform: scale(1.05);
-    }
-    #mensaje, #sorpresa {
-      display: none;
-      animation: fadeIn 2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .spiderman {
-      margin-top: 20px;
-      max-width: 150px;
-      border-radius: 15px;
-      transition: transform 0.3s;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-    .spiderman:hover {
-      transform: scale(1.1);
-    }
-    #canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 9999;
-    }
-    #countdown {
-      font-size: 1.2em;
-      margin-top: 15px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>deyvid <3</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🎉 ¡Feliz Cumpleaños! 🎉</h1>
-  <p>Haz clic en los botones para interactuar 💌</p>
-  <button onclick="mostrarMensaje()">Ver mensaje</button>
-  <button onclick="mostrarSorpresa()">🎁 Sorpresa</button>
-  <button onclick="toggleModoNocturno()">🌙 Modo nocturno</button>
+  <div id="intro"><h2>...</h2></div>
+
+  <h1>Feliz Cumpleaños <3</h1>
+  <p>Haz clic en los botones ⬇</p>
+  <button onclick="mostrarMensaje()">mensajito</button>
+  <button onclick="mostrarSorpresa()">mis palabras</button>
+  <button onclick="mostrarVideo()">video</button>
+  <button onclick="mostrarGaleria()">fotitos</button>
+  <button onclick="mostrarJuego()">?</button>
+  <button onclick="toggleModoNocturno()">🌙</button>
   <div id="countdown"></div>
 
   <div id="mensaje">
-    <p>✨ Hoy celebro tu existencia y todo lo hermoso que hay en ti ✨</p>
-    <p>Este año, deseo que encuentres más razones para sonreír, soñar y brillar 🌟</p>
-    <p>Gracias por existir. Te mereces lo mejor. ¡Feliz cumpleaños! 🎂💖</p>
-    <img class="spiderman" src="https://i.pinimg.com/originals/55/d3/67/55d367869ff621d1b1fcab6db1b9ed95.png" alt="Spiderman tierno">
-    <img class="spiderman" src="https://i.pinimg.com/originals/b2/50/f4/b250f4e3b943661f5f7f10d48b6bfb47.png" alt="Spiderman tierno 2">
-    <img class="spiderman" src="https://media.tenor.com/ZMNQfbH6DCwAAAAi/spiderman-dance.gif" alt="Spiderman bailando">
+    <p>Feliz cumpleaños Dey, de corazón quisiera decirte lo feliz que me hace</p>
+    <p>tu existencia. Me alegra ser ahora parte de tu vida y poder estar contigo</p>
+    <p>en esta etapa de ella. Te quiero mucho. Te mereces lo mejor.</p>
+    <img class="spiderman" src="https://i.pinimg.com/originals/55/d3/67/55d367869ff621d1b1fcab6db1b9ed95.png">
+    <img class="spiderman" src="https://i.pinimg.com/originals/b2/50/f4/b250f4e3b943661f5f7f10d48b6bfb47.png">
+    <img class="spiderman" src="https://media.tenor.com/ZMNQfbH6DCwAAAAi/spiderman-dance.gif">
   </div>
 
   <div id="sorpresa">
-    <p>🌈 Aquí va tu sorpresa... ¡Un poema para ti!</p>
-    <p style="max-width: 600px; margin: auto; font-style: italic;">
-      Eres como el sol que ilumina mis días,<br>
-      como un verso suave lleno de alegría.<br>
-      Que esta vuelta al sol traiga sueños cumplidos,<br>
-      con risas, amor... y mil latidos. 💕
-    </p>
-    <img src="https://media.tenor.com/uH93Z_WFbZAAAAAi/spiderman-jump.gif" alt="Spiderman sorpresa" class="spiderman">
+    <p>Debido a que no puedo verte el día de hoy, te escribí un poco de lo que me gustaría decirte. </p>
+    <div style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333;">
+  <p>💛</p>
+
+  <p>Aunque no puedo estar a tu lado para abrazarte y verte sonreír en persona, quiero que sepas cuánto estoy pensando en ti.</p>
+
+  <p>Hay tantas cosas que me gustan de ti, solo soy mala con las palabras… Me gusta tu forma de ser, lo atento que eres con los demás, cómo escuchas, cómo haces reír, cómo miras. Hay una dulzura en tu mirada que me desarma cada vez que me ves, y una paz en tus abrazos que me hace no querer soltarte nunca.</p>
+
+  <p>Pero si hay algo que más admiro en ti y me gustaría conocer muy a fondo es tu corazón, en un futuro estaré muy feliz de hacerlo y estaré encantada. También, quiero que tú conozcas el mío.</p>
+
+  <p>Pienso mucho en lo afortunada que me siento por haberte conocido, por cruzarme con alguien como tú. Me encantaría poder verte todos los días, porque con solo verte, mi día cambia.</p>
+
+  <p>Sé que hoy estás lejos, tal vez celebrando con tus seres queridos, y eso me alegra… pero también me encantaría estar ahí, poder abrazarte fuerte y hacerte sentir lo importante que has llegado a ser para mí.</p>
+
+  <p>Gracias por ser como eres, por mirarme como lo haces, por dejarme conocerte poquito a poquito. Nunca pensé conocer a alguien tan lindo cómo tú. Hoy solo quiero desearte un año lleno de cosas lindas, de aprendizajes, de sonrisas sinceras y momentos que te llenen el alma. Porque te lo mereces todo.</p>
+
+  <p><strong>Feliz cumpleaños, Deyvid.</strong> Espero que este día esté lleno de amor… y que en algún rincón de ese amor, también esté el mío. 🌻</p>
+</div>
+
+  <div id="video">
+    <video width="320" height="240" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
   </div>
 
+  <div id="galeria" class="galeria">
+    <img src="https://picsum.photos/id/237/200/200">
+    <img src="https://picsum.photos/id/238/200/200">
+    <img src="https://picsum.photos/id/239/200/200">
+  </div>
+
+  <div id="juego">
+    <button onclick="alert('lo encontraste :)')">🔍</button>
+  </div>
+
+  <form id="respuesta">
+    <p>Si tienes algo que decirme</p>
+    <input type="text" placeholder="...">
+    <button type="submit">Enviar</button>
+  </form>
+
   <audio id="musica" src="https://cdn.pixabay.com/download/audio/2023/03/17/audio_7f2c5be19a.mp3?filename=happy-birthday-131108.mp3" preload="auto"></audio>
-
   <canvas id="canvas"></canvas>
-
-  <script>
-    function mostrarMensaje() {
-      document.getElementById("mensaje").style.display = "block";
-      document.getElementById("musica").play();
-      lanzarFuegosArtificiales();
-    }
-
-    function mostrarSorpresa() {
-      document.getElementById("sorpresa").style.display = "block";
-    }
-
-    function toggleModoNocturno() {
-      document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? '' : 'black';
-    }
-
-    // Fuegos artificiales simples con canvas
-    const canvas = document.getElementById("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    function lanzarFuegosArtificiales() {
-      let particles = [];
-      for (let i = 0; i < 100; i++) {
-        particles.push({
-          x: canvas.width / 2,
-          y: canvas.height / 2,
-          radius: Math.random() * 3 + 1,
-          color: `hsl(${Math.random() * 360}, 100%, 50%)`,
-          dx: (Math.random() - 0.5) * 10,
-          dy: (Math.random() - 0.5) * 10
-        });
-      }
-
-      let interval = setInterval(() => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-          ctx.fillStyle = p.color;
-          ctx.fill();
-          p.x += p.dx;
-          p.y += p.dy;
-          p.radius *= 0.96;
-        });
-        if (particles.every(p => p.radius < 0.5)) clearInterval(interval);
-      }, 30);
-    }
-
-    // Contador regresivo al cumpleaños (ajustar la fecha)
-    const fechaCumple = new Date('2025-07-15T00:00:00');
-    const countdown = document.getElementById("countdown");
-
-    function actualizarContador() {
-      const ahora = new Date();
-      const diferencia = fechaCumple - ahora;
-      if (diferencia > 0) {
-        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
-        const minutos = Math.floor((diferencia / 1000 / 60) % 60);
-        const segundos = Math.floor((diferencia / 1000) % 60);
-        countdown.innerHTML = `🎂 Falta ${dias}d ${horas}h ${minutos}m ${segundos}s para tu cumpleaños`;
-      } else {
-        countdown.innerHTML = "🎉 ¡Hoy es tu cumpleaños! 🎉";
-      }
-      
-    }
-    setInterval(actualizarContador, 1000);
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
