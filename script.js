@@ -61,8 +61,8 @@ function lanzarFuegosArtificiales() {
   }, 30);
 }
 
-// Contador que detecta que hoy es el día
-const fechaCumple = new Date();
+// Contador
+const fechaCumple = new Date(); // hoy
 const countdown = document.getElementById("countdown");
 
 function actualizarContador() {
