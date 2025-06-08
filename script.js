@@ -69,7 +69,7 @@ function actualizarContador() {
   const ahora = new Date();
   const diferencia = fechaCumple - ahora;
   if (Math.abs(diferencia) < 86400000) {
-    countdown.innerHTML = "🎉 ¡Hoy es tu cumpleaños! 🎉";
+    countdown.innerHTML = ". . .";
   } else {
     const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
     const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
