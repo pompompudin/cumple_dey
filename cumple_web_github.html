@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Feliz Cumpleaños!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images8.alphacoders.com/117/1173519.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      backdrop-filter: brightness(0.8);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      text-shadow: 2px 2px 5px black;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 10px 0;
+      text-shadow: 1px 1px 3px black;
+    }
+    button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #fff;
+      color: #f12711;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    #mensaje {
+      display: none;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .spiderman {
+      margin-top: 20px;
+      max-width: 150px;
+      border-radius: 15px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .spiderman:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 ¡Feliz Cumpleaños! 🎉</h1>
+  <p>Haz clic en el botón para ver tu mensaje especial 💌</p>
+  <button onclick="mostrarMensaje()">Ver mensaje</button>
+
+  <div id="mensaje">
+    <p>✨ Hoy celebro tu existencia y todo lo hermoso que hay en ti ✨</p>
+    <p>Este año, deseo que encuentres más razones para sonreír, soñar y brillar 🌟</p>
+    <p>Gracias por existir. Te mereces lo mejor. ¡Feliz cumpleaños! 🎂💖</p>
+    <img class="spiderman" src="https://i.pinimg.com/originals/55/d3/67/55d367869ff621d1b1fcab6db1b9ed95.png" alt="Spiderman tierno">
+    <img class="spiderman" src="https://i.pinimg.com/originals/b2/50/f4/b250f4e3b943661f5f7f10d48b6bfb47.png" alt="Spiderman tierno 2">
+  </div>
+
+  <audio id="musica" src="https://cdn.pixabay.com/download/audio/2023/03/17/audio_7f2c5be19a.mp3?filename=happy-birthday-131108.mp3" preload="auto"></audio>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").style.display = "block";
+      document.getElementById("musica").play();
+    }
+  </script>
+</body>
+</html>
