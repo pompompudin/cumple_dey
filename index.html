@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>deyvid <3</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="intro"><h2>...</h2></div>
+  <div id="intro"><h2>｡･ﾟﾟ*ﾟﾟ･｡</h2></div>
 
-  <h1>Feliz Cumpleaños <3</h1>
-  <p>Haz clic en los botones ⬇</p>
-  <button onclick="mostrarMensaje()">mensajito</button>
-  <button onclick="mostrarSorpresa()">mis palabras</button>
-  <button onclick="mostrarVideo()">video</button>
-  <button onclick="mostrarGaleria()">fotitos</button>
-  <button onclick="mostrarJuego()">?</button>
-  <button onclick="toggleModoNocturno()">🌙</button>
-  <div id="countdown"></div>
+  <div class="main-container">
+    <header>
+      <h1>Feliz Cumpleaños Deyvid! ♥</h1>
+      <p click en la lunita </p>
+    </header>
 
-  <div id="mensaje">
-    <p>Feliz cumpleaños Dey, de corazón quisiera decirte lo feliz que me hace</p>
-    <p>tu existencia. Me alegra ser ahora parte de tu vida y poder estar contigo</p>
-    <p>en esta etapa de ella. Te quiero mucho. Te mereces lo mejor.</p>
-    <img class="spiderman" src="https://i.pinimg.com/originals/55/d3/67/55d367869ff621d1b1fcab6db1b9ed95.png">
-    <img class="spiderman" src="https://i.pinimg.com/originals/b2/50/f4/b250f4e3b943661f5f7f10d48b6bfb47.png">
-    <img class="spiderman" src="https://media.tenor.com/ZMNQfbH6DCwAAAAi/spiderman-dance.gif">
+    <nav class="button-group">
+      <button onclick="mostrarMensaje()">mensajito</button>
+      <button onclick="mostrarSorpresa()">mis palabras</button>
+      <button onclick="mostrarVideo()">video</button>
+      <button onclick="mostrarGaleria()">fotitos</button>
+      <button onclick="mostrarJuego()">?</button>
+      <button onclick="toggleModoNocturno()">🌙</button>
+    </nav>
+
+    <div id="countdown" class="countdown-box"></div>
+
+    <section id="mensaje" class="box">
+      <p>Feliz cumpleaños Dey, de corazón quisiera decirte lo feliz que me hace</p>
+      <p>tu existencia. Me alegra ser ahora parte de tu vida y poder estar contigo</p>
+      <p>en esta etapa de ella. Te quiero mucho. Te mereces lo mejor.</p>
+      <div class="spidey-imgs">
+        <img src="https://i.pinimg.com/originals/55/d3/67/55d367869ff621d1b1fcab6db1b9ed95.png">
+        <img src="https://i.pinimg.com/originals/b2/50/f4/b250f4e3b943661f5f7f10d48b6bfb47.png">
+        <img src="https://media.tenor.com/ZMNQfbH6DCwAAAAi/spiderman-dance.gif">
+      </div>
+    </section>
+
+    <section id="sorpresa" class="box">
+      <p>Debido a que no puedo verte el día de hoy, te escribí un poco de lo que me gustaría decirte.</p>
+      <div class="poema">
+        <p>💛</p>
+        <p>Aunque no puedo estar a tu lado para abrazarte y verte sonreír en persona, quiero que sepas cuánto estoy pensando en ti.</p>
+        <p>Hay tantas cosas que me gustan de ti... Me gusta tu forma de ser, lo atento que eres, cómo escuchas, haces reír, cómo miras...</p>
+        <p>Pero si hay algo que más admiro en ti y me gustaría conocer muy a fondo es tu corazón...</p>
+        <p>Gracias por ser como eres, por mirarme como lo haces, por dejarme conocerte poquito a poquito.</p>
+        <p><strong>Feliz cumpleaños, Deyvid.</strong> Espero que este día esté lleno de amor… y que en algún rincón de ese amor, también esté el mío. 🌻</p>
+      </div>
+    </section>
+
+    <section id="video" class="box">
+      <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="galeria" class="galeria">
+      <img src="https://picsum.photos/id/237/200/200">
+      <img src="https://picsum.photos/id/238/200/200">
+      <img src="https://picsum.photos/id/239/200/200">
+    </section>
+
+    <section id="juego" class="box">
+      <button onclick="alert('lo encontraste :)')">🔍</button>
+    </section>
+
+    <form id="respuesta" class="box">
+      <p>Si tienes algo que decirme</p>
+      <input type="text" placeholder="...">
+      <button type="submit">Enviar</button>
+    </form>
   </div>
-
-  <div id="sorpresa">
-    <p>Debido a que no puedo verte el día de hoy, te escribí un poco de lo que me gustaría decirte. </p>
-    <div style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333;">
-  <p>💛</p>
-
-  <p>Aunque no puedo estar a tu lado para abrazarte y verte sonreír en persona, quiero que sepas cuánto estoy pensando en ti.</p>
-
-  <p>Hay tantas cosas que me gustan de ti, solo soy mala con las palabras… Me gusta tu forma de ser, lo atento que eres con los demás, cómo escuchas, cómo haces reír, cómo miras. Hay una dulzura en tu mirada que me desarma cada vez que me ves, y una paz en tus abrazos que me hace no querer soltarte nunca.</p>
-
-  <p>Pero si hay algo que más admiro en ti y me gustaría conocer muy a fondo es tu corazón, en un futuro estaré muy feliz de hacerlo y estaré encantada. También, quiero que tú conozcas el mío.</p>
-
-  <p>Pienso mucho en lo afortunada que me siento por haberte conocido, por cruzarme con alguien como tú. Me encantaría poder verte todos los días, porque con solo verte, mi día cambia.</p>
-
-  <p>Sé que hoy estás lejos, tal vez celebrando con tus seres queridos, y eso me alegra… pero también me encantaría estar ahí, poder abrazarte fuerte y hacerte sentir lo importante que has llegado a ser para mí.</p>
-
-  <p>Gracias por ser como eres, por mirarme como lo haces, por dejarme conocerte poquito a poquito. Nunca pensé conocer a alguien tan lindo cómo tú. Hoy solo quiero desearte un año lleno de cosas lindas, de aprendizajes, de sonrisas sinceras y momentos que te llenen el alma. Porque te lo mereces todo.</p>
-
-  <p><strong>Feliz cumpleaños, Deyvid.</strong> Espero que este día esté lleno de amor… y que en algún rincón de ese amor, también esté el mío. 🌻</p>
-</div>
-
-  <div id="video">
-    <video width="320" height="240" controls>
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div id="galeria" class="galeria">
-    <img src="https://picsum.photos/id/237/200/200">
-    <img src="https://picsum.photos/id/238/200/200">
-    <img src="https://picsum.photos/id/239/200/200">
-  </div>
-
-  <div id="juego">
-    <button onclick="alert('lo encontraste :)')">🔍</button>
-  </div>
-
-  <form id="respuesta">
-    <p>Si tienes algo que decirme</p>
-    <input type="text" placeholder="...">
-    <button type="submit">Enviar</button>
-  </form>
 
   <audio id="musica" src="https://cdn.pixabay.com/download/audio/2023/03/17/audio_7f2c5be19a.mp3?filename=happy-birthday-131108.mp3" preload="auto"></audio>
   <canvas id="canvas"></canvas>
   <script src="script.js"></script>
+</body>
+</html>
+src="script.js"></script>
 </body>
 </html>
